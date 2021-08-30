@@ -15,7 +15,7 @@ function toAGBR(image) {
     const blue = this.bitmap.data[index + 2];
     const alpha = this.bitmap.data[index + 3];
 
-    this.bitmap.data[index + 0] = alpha;
+    this.bitmap.data[index + 0] = 0xff;
     this.bitmap.data[index + 1] = blue;
     this.bitmap.data[index + 2] = green;
     this.bitmap.data[index + 3] = red;
